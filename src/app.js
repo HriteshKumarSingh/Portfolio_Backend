@@ -19,6 +19,9 @@ app.use(cookieParse())
 
 
 app.use("/api" , getInTouchRouter)
+app.use("/api/me" , (req,res) => {
+    res.send("HI")
+})
 
 
 export {app}
